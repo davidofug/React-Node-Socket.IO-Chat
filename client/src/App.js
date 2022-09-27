@@ -13,7 +13,6 @@ function App() {
 			socket.emit("join_room", room);
 			/* 			setUsername("");
 			setRoom(""); */
-			/* Comment */
 			setShowChat(true);
 		}
 	};
