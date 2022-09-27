@@ -24,7 +24,13 @@ The major goal of building this chat was to learn websockets using socket.io
 
 6 `yarn start` or `npm run start`
 
-Check your browser
+# How to use the Realtime Web based Chat app
+
+1 Open two Browser windows and point each to http://localhost:3000
+
+2. Provide a name and room id in each browser window. The room id should be similar but the names should be different to test successfully.
+
+3. The Chat screen will show up in each Browser window. You should be start typing messages and send messages.
 
 # Troubleshooting
 
