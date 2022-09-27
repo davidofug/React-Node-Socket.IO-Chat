@@ -14,14 +14,20 @@ const io = new Server(server, {
 });
 
 io.on("connection", (socket) => {
-	console.log(`User connected ${socket.id}`);
+	// console.log(`User connected ${socket.id}`);
 	socket.on("join_room", (data) => {
 		socket.join(data);
-		console.log(`User with ID: ${socket.id} joinned room: ${data}`);
+		// console.log(`User with ID: ${socket.id} joinned room: ${data}`);
 	});
 	socket.on("send_message", (data) => {
 		socket.to(data.room).emit("receive_message", data);
 		console.log(data);
+	});
+
+	socket.on("typing", (data) => {
+		if (data.typing === true)
+			socket.to(data.room).emit("display_typing_status", data);
+		else socket.to(data.room).emit("display_typing_status", data);
 	});
 	socket.on("discconect", () => {
 		console.log("User disconnect", socket.id);
