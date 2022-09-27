@@ -42,5 +42,7 @@ The major goal of building this chat was to learn websockets using socket.io
 ### Did you like it?
 
 Follow me on Twitter[@davidofug](https://twitter.com/davidofug)
+
 [Click here](https://youtube.com/c/davidwampamba) to subscribe to my YouTube channel.
+
 [Click here](https://blog.davidofug.com) to check out my blog
