@@ -31,13 +31,30 @@ function Chat({ socket, username, room }) {
 		};
 	}, []);
 	return (
-		<div>
-			<p>Live Chat</p>
-			<div className="chat-header"></div>
+		<div className="chat-wrapper">
+			<div className="chat-header">
+				<h1>Live Chat</h1>
+			</div>
 			<div className="chat-body">
-				<ScrollToBottom>
-					{messageList.map((messageItem) => {
-						return <p>{messageItem.message}</p>;
+				<ScrollToBottom className="chat-body-inner">
+					{messageList.map((messageItem, index) => {
+						return (
+							<div
+								key={index.toString()}
+								className={`message-wrapper ${
+									username === messageItem.author
+										? "you"
+										: "other"
+								}`}>
+								<article className="message">
+									{messageItem.message}
+								</article>
+								<div className="author-time">
+									{messageItem.time}{" "}
+									<span>{messageItem.author}</span>
+								</div>
+							</div>
+						);
 					})}
 				</ScrollToBottom>
 			</div>
@@ -48,16 +65,13 @@ function Chat({ socket, username, room }) {
 					onChange={(event) => {
 						setCurrentMessage(event.target.value);
 					}}
-				/>
-				<button
-					onClick={sendMessage}
 					onKeyPress={(event) => {
 						if (event.key === "Enter") {
 							sendMessage();
 						}
-					}}>
-					&#9658;
-				</button>
+					}}
+				/>
+				<button onClick={sendMessage}>&#9658;</button>
 			</div>
 		</div>
 	);
