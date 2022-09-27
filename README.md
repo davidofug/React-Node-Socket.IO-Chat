@@ -16,7 +16,7 @@ The major goal of building this chat was to learn websockets using socket.io
 
 3. `yarn` or `npm install`
 
-4 `yarn start` or `npm run start`
+4. `yarn start` or `npm run start`
 
 5. `cd client`
 
