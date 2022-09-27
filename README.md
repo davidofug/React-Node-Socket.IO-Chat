@@ -31,3 +31,4 @@ Check your browser
 -   Make sure yarn or npm has installed the necessary dependences.
 -   In case project doesn't run check your terminal for errors.
 -   You can also check the browser console.
+-   If the receiver or sender receives the double or repeat messages make sure to use the clean up function in the useEffect hook in client/Chat.js and use an empty array for the useEffect dependencies.

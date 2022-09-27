@@ -17,7 +17,7 @@ function Chat({ socket, username, room }) {
 			};
 
 			await socket.emit("send_message", messageData);
-			setMessageList([...list, messageData]);
+			setMessageList((list) => [...list, messageData]);
 			setCurrentMessage("");
 		}
 	};
@@ -26,8 +26,10 @@ function Chat({ socket, username, room }) {
 		socket.on("receive_message", (data) => {
 			setMessageList((list) => [...list, data]);
 		});
-		return () => {};
-	}, [socket]);
+		return () => {
+			socket.off("receive_message");
+		};
+	}, []);
 	return (
 		<div>
 			<p>Live Chat</p>
