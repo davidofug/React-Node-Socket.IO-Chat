@@ -44,8 +44,11 @@ function Chat({ socket, username, room }) {
 	return (
 		<div className="chat-wrapper">
 			<div className="chat-header">
-				<h1>Live Chat</h1>
-				{status}
+				<h1 className="chat-heading">
+					Live Chat
+					<br />
+					<span className="chat-typing-status">{status}</span>
+				</h1>
 			</div>
 			<div className="chat-body">
 				<ScrollToBottom className="chat-body-inner">
@@ -81,7 +84,8 @@ function Chat({ socket, username, room }) {
 						if (event.key === "Enter") {
 							sendMessage();
 						}
-
+					}}
+					onKeyDown={async (event) => {
 						await socket.emit("typing", {
 							user: username,
 							room: room,
