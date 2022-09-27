@@ -10,19 +10,19 @@ The major goal of building this chat was to learn websockets using socket.io
 
 # Set up the project
 
-1 `$git clone https://github.com/davidofug/React-Node-Socket.IO-Chat.git`
+1 `git clone https://github.com/davidofug/React-Node-Socket.IO-Chat.git`
 
-2 `$cd server`
+2 `cd server`
 
-3 `$yarn or $npm install`
+3 `yarn` or `npm install`
 
-4 `$yarn start or $npm run start`
+4 `yarn start` or `npm run start`
 
 4 `cd client`
 
-5 `yarn or $npm install`
+5 `yarn` or `npm install`
 
-6 `yarn start or $npm run start`
+6 `yarn start` or `npm run start`
 
 Check your browser
 
