@@ -41,8 +41,22 @@ The major goal of building this chat was to learn websockets using socket.io
 
 ### Did you like it?
 
-Follow me on Twitter[@davidofug](https://twitter.com/davidofug)
+Follow me on Twitter [@davidofug](https://twitter.com/davidofug)
 
 [Click here](https://youtube.com/c/davidwampamba) to subscribe to my YouTube channel.
 
 [Click here](https://blog.davidofug.com) to check out my blog
+
+### Suggestion features
+
+1. Login and Sign up
+
+2. Show online/offline status
+
+3. Allow attachments
+
+4. Persist the Rooms and messages
+
+5. Deploy a demo
+
+6.
