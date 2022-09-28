@@ -41,6 +41,8 @@ The major goal of building this chat was to learn websockets using socket.io
 
 ### Did you like it?
 
+Give this project a star
+
 Follow me on Twitter [@davidofug](https://twitter.com/davidofug)
 
 [Click here](https://youtube.com/c/davidwampamba) to subscribe to my YouTube channel.
@@ -59,4 +61,10 @@ Follow me on Twitter [@davidofug](https://twitter.com/davidofug)
 
 5. Deploy a demo
 
-6.
+6. Unread message counter
+
+7. Unread message status
+
+8. User avatars and profile photos
+
+9. User profiles
