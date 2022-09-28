@@ -41,6 +41,7 @@ function Chat({ socket, username, room }) {
 			socket.off("display");
 		};
 	}, []);
+
 	return (
 		<div className="chat-wrapper">
 			<div className="chat-header">
